@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GameOfLifeAnimated</title>
+    <link rel="stylesheet" href="gameoflifeanimated.css">
+  </head>
+  <body>
+    <h1>GameOfLifeAnimated</h1>  
+    <div class="controls">
+      <div>
+         Rows:<input type="text" id="rows"/>
+      </div>
+      <div>
+        Columns:<input type="text" id="columns"/>
+      </div>
+      <div>
+        <button id="generateButton">New Board</button>
+      </div>
+      <div>
+        <button id="runButton" disabled>Run!</button>
+      </div>
+      <div>
+        <button id="cancelButton" disabled>Stop</button>
+      </div>
+    </div>  
+    <h2>Board</h2>
+    <div id="board"></div>
+    <script type="application/dart" src="gameoflifeanimated.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
